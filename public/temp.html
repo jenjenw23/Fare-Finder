@@ -1,0 +1,156 @@
+<!--main-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BeneFare | Tag line goes here!</title>
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+<!--font awesome-->
+<script src="https://use.fontawesome.com/fc86d1affb.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="/assets/js/users.js"></script>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+<!--main-->
+<body>
+
+<!--header in partials folder--> 
+{{> header}}
+<nav class="navbar navbar-light bg-light fixed-top"> <a class="navbar-brand" href="/"> <img src="assets/images/benefare2.png" width="50" height="50" class="d-inline-block align-top" alt="benefare logo"> <span class="headName">Benefare</span> </a>
+  <div class="fixed-top">
+    <ul class="nav justify-content-end">
+      <li class="nav-item"> <a class="nav-link" href="/"><i class="fa fa-home fa-sm"></i></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="/reg">Sign Up</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="/login">Login</a> </li>
+      <!--      <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+      <li class="nav-item"> <a class="nav-link disabled" href="#">Disabled</a> </li>-->
+    </ul>
+  </div>
+</nav>
+<div class="row" style="margin-top: 80px;">
+  <div class="col-lg-2 text-center"></div>
+  <div class="col-lg-8 text-center">
+    <div id="mycarousel" class="carousel slide" data-ride="carousel" >
+      <ol class="carousel-indicators">
+        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#mycarousel" data-slide-to="1"></li>
+        <li data-target="#mycarousel" data-slide-to="2"></li>
+        <li data-target="#mycarousel" data-slide-to="3"></li>
+        <li data-target="#mycarousel" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active"> <img class="d-block w-100" src="assets/images/001.jpg" alt=" "> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="assets/images/002.jpg" alt=" "> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="assets/images/003.jpg" alt=" "> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="assets/images/004.jpg" alt=" "> </div>
+        <div class="carousel-item"> <img class="d-block w-100" src="assets/images/005.jpg" alt=" "> </div>
+      </div>
+      <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+    <div class="col-lg-2 text-center"></div>
+  </div>
+</div>
+
+<!--header--> 
+
+<!--index-->
+<div class="container">
+  <div class="row" style="margin-top: 15px;">
+    <div class="col text-center">
+      <div id="locationField">
+        <label for="autocomplete" class="col-sm-2 col-form-label">Pick Up Location</label>
+        <br/>
+        <input id="autocomplete" class="form-control form-control-lg" placeholder="Enter your address" onFocus="geolocate()" type="text">
+        </input>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 15px;">
+    <div class="col text-center">
+      <label for="autocomplete2" class="col-sm-2 col-form-label">Drop Off Location</label>
+      <br/>
+      <input id="autocomplete2" class="form-control form-control-lg" placeholder="Enter your address" onFocus="geolocate()" type="text">
+      </input>
+    </div>
+  </div>
+  <div class="row"  style="margin-top: 15px;">
+    <div class="col-lg-12 text-center">
+      <h2>&nbsp;</h2>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+<!--index--> 
+
+<!--estimates--> 
+{{> header}}
+<div class="container">
+  <div class="row" style="margin-top: 15px;">
+    <div class="col-lg-12 text-center">
+      <h2>Fare Estimates</h2>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 15px;">
+    <div class="col text-center"> <img src="assets/images/uber_logo.png" width="100" height="26" alt=""/>
+      <h4>$15</h4>
+      <hr>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 15px;">
+    <div class="col-lg-12 text-center"> <img src="assets/images/lyft_logo.png" width="100" height="71" alt=""/>
+      <h4>$13</h4>
+    </div>
+  </div>
+</div>
+{{> footer}} 
+<!--estimates--> 
+
+<!--admin-->
+<div class="row"  style="margin-top: 15px;">
+  <div class="col-lg-12 text-center">
+    <h2>Users</h2>
+    <div class="panel panel-default">
+    <ol>
+      <!--move burger and buttons from partials--> 
+      {{#each users}}
+      <li>{{this.name}} 
+        <!--needed to be inside the li so show up correctly}--> 
+        <!--<button class="change-state" data-id="{{id}}" data-newstate="{{devoured}}">
+            {{#unless devoured}}Devour!{{/unless}}
+          </button>--> 
+      </li>
+      {{/each}}
+    </ol>
+    </div>
+  </div>
+</div>
+<!--admin--> 
+
+<!--footer in partials folder--> 
+{{> footer}}
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4"> 
+      <span class="text-muted">BeneFare &copy;</span> 
+      </div>
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4 text-right">
+        <p><a href="/admin">Admin</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer-->
+
+</body>
+</html>

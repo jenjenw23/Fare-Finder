@@ -1,0 +1,121 @@
+body {
+	background-color: #FFF;
+}
+li {
+	padding: 5px 20px 10px 5px;
+	margin: 5px 5px 10px 5px;
+	/*background: #22c93c;*/
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 5px;
+}
+.finished {
+	text-decoration: line-through;
+}
+.label {
+	font-weight: bold;
+}
+.create-update-form {
+	padding: 5px;
+	margin: 5px;
+	background: aqua;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+h2, h3 {
+	color: #676767;
+}
+h4 {
+	font-size: 25px;
+	color: #007bff;
+	font-weight: bold;
+}
+button.change-state {
+	float: right;
+}
+.panel {
+	background-color: #22c93c;
+}
+.panel-primary {
+	border-color: #000;
+}
+.panel-primary > .panel-heading {
+	color: #65E0F4;
+	background-color: #434343;
+	border-color: #337ab7;
+}
+#overlay {
+	display: none;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	top: 50px;
+	left: 50px;
+	padding: 10px;
+	opacity: .8;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: #f5f5f5;
+}
+/*--start Seyi css*/
+div.top {
+	padding: 15px;
+	text-align: center;
+}
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+}
+div.gallery:hover {
+	border: 1px solid #777;
+}
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+.form-control {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
+.wrap-login {
+	width: 560px;
+	background: #fff;
+	border-radius: 10px;
+	position: relative;
+	margin-top: 15%;
+}
+/*--bootstrap ajusted css*/
+.nav-link {
+	display: block;
+	padding: .5rem .25rem;
+}
+.headName {
+	font-family: 'Bungee Shade', cursive;
+}
+.navbar-brand {
+	font-size: 30px;
+	line-height: 35px;
+	white-space: nowrap;
+}
+.edit.btn.btn-primary, .delete.btn.btn-danger  {
+    float: right;
+    margin: 5px;
+}
+.text-dark {
+    color: #343a40 !important;
+    font-size: 25px;
+}

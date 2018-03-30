@@ -1,0 +1,27 @@
+{{> header}}
+<div class="container">
+  <div class="row" style="margin-top: 15px;">
+    <div class="col-lg-12 text-center">
+      <h2>Admin</h2>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 15px; padding-left: 10%;">
+    <div class="col-lg-12">
+      <h2>Users</h2>
+      {{#each users}}
+      <div class="card bg-light text-dark">
+        <div class="card-body">
+          {{this.name}} {{!-- button --}}
+          <a class="delete btn btn-danger" data-id="{{id}}" href="/admin/users/:id" role="button">Delete</a>
+          <a class="edit btn btn-primary" data-id="{{id}}" href="/admin/users/:id" role="button">Edit</a>
+        </div>
+      </div>
+      {{/each}}
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      </ol>
+    </div>
+  </div>
+</div>
+{{> footer}}
