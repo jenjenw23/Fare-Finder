@@ -27,9 +27,8 @@ router.get('/reg', function (req, res) {
     res.render('reg');
 });
 
+//estimates page
 router.get('/estimates', function (req, res) {
-    //console.log(sourceFile.startLat);
-    //console.log(ffCoords);
     res.render('estimates');
 
 });
