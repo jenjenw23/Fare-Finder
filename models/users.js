@@ -11,6 +11,13 @@ module.exports = function (sequelize, DataTypes) {
         len: [1]
       }
     },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1]
+      }
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -19,14 +26,7 @@ module.exports = function (sequelize, DataTypes) {
       }
     }
   }, {
-      //     classMethods: {
-      //         associate: function(models) {
-      //             Burger.hasMany(models.Customer, {
-      //                 onDelete: "cascade"
-      //             });
-      //         }
-
-      //     }
+    
     });
     
   User.sync();

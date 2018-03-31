@@ -12,8 +12,8 @@
       <div class="card bg-light text-dark">
         <div class="card-body">
           {{this.name}} {{!-- button --}}
-          <a class="delete btn btn-danger" data-id="{{id}}" href="/admin/users/:id" role="button">Delete</a>
-          <a class="edit btn btn-primary" data-id="{{id}}" href="/admin/users/:id" role="button">Edit</a>
+          <button type="submit" class="delete btn btn-danger delete-user"  data-id="{{id}}">Delete</button>
+          <a class="edit btn btn-primary" data-id="{{id}}" href="/api/users/:id" role="button">Edit</a>
         </div>
       </div>
       {{/each}}
